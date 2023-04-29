@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal portfolio</title>
+    
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+     
+    <link rel="stylesheet" href="style.css">
+     <!--Bootstrap Js-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script> 
+     <script src="https://kit.fontawesome.com/3fde28467d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <!--Nav bar-->
+            <nav>
+                <img src="images/Naila Logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+              
+            
+            </nav>
+            
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi, I'm<span> Naila</span></h1>
+                <p>A Constant Learner for Achieving<br> New skills!</p>
+                <button type="button" class="btn btn-secondary"><a href="#contact">Contact Me</a></button>
+                <button type="button" class="btn btn-secondary"><a href="images/my-cv.pdf.pdf" download>Download CV</a></button>
+            </div>
+        </div>
+    </div>
+    <!--About Section-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello,I'm Naila,23 years old passionate web designer from India with a 
+                        passion for creating engaging digital experiences.I will help clients across
+                        various industries create intuitive and visually stunning websites that meet
+                        their business needs.Below i lists some of my skills i possess as a 
+                        web designer.These skills include expertise in designing responsive websites,
+                        proficiency in user interface design, and experience in user research and
+                        usability testing. 
+                          
+                         </p>
+                          
+                          <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('Education')">Education</p>
+                          </div>
+                          <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>Website Devolopment</li>
+                                <li>Website Designing</li>
+                                <li>Digital Marketing</li>
+                                <li>SEO</li>
+                            </ul>
+                          </div>
+                          <div class="tab-contents" id="Education">
+                            <ul>
+                                <li>Anaesthesia & OT Tech in Mangalore(2017-2021)</li>
+                                <li>Website devolopment& designing-Diploma in Hubli(2022-2023)</li>
+                                <li>Digital Marketing-Google Certified(2023)</li>
+                            </ul>
+                          </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Services section-->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                         industry. Lorem Ipsum has been the industry's standard dummy 
+                         text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to 
+                        make a type specimen book</p>
+                        
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>Web Designing</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                         industry. Lorem Ipsum has been the industry's standard dummy 
+                         text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to 
+                        make a type specimen book</p>
+                        
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h2>SEO</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                         industry. Lorem Ipsum has been the industry's standard dummy 
+                         text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it to 
+                        make a type specimen book</p>
+                        
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!--portfolio-->
+    <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>Resume Website</h3>
+                    <a href="wdd/day 1/homewrk.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Work2.jpg"><div class="layer">
+                    <h3>Instagram Logo</h3>
+                    <a href="insta.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Work3.gif">
+                <div class="layer">
+                    <h3>preloader-Animation</h3>
+                    <a href="wdd/day 1/anmtion.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="images/Work4.jpg">
+                <div class="layer">
+                    <h3>travel Website</h3>
+                    <a href="wdd/Day 1/Assignment/assignment.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Work5.png">
+                <div class="layer">
+                    <h3>SignUp Form</h3>
+                    <a href="wdd/day 1/signup.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Work6.jpg">
+                <div class="layer">
+                    <h3>Home Page-Nav Bar</h3>
+                    <a href="WDD/attraction/attractive.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!---Contact me-->
+
+    <div id="contact">
+       <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>contact@naila.com</p>
+                <p><i class="fa-sharp fa-solid fa-square-phone"></i>6700543356</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+       </div>
+       <div class="copyright">
+        <p>Copyright  <i class="fa-regular fa-copyright">
+
+        </i> 2023 <i class="fa-solid fa-heart"></i> NAILA ABDUL SALAM</p>
+       </div>
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+        
+    </script>
+   
+</body>
+</html>
+
+   
+    
+    
+    
+  
+    
+   

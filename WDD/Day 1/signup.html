@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up form</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-12">
+
+            <form action="signup.html" method="post">
+                <h1>sign Up</h1>
+                <fieldset>
+
+                    <legend><span class="number">1</span>Your basic info
+                    </legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br>
+
+                    <label>Email:</label>
+                    <input type="email" id="email" name="em"><br>
+
+                    <label>password:</label>
+                    <input type="password" id="password" name="pw"><br>
+
+                    <label>Age:</label><br>
+                    <input type="radio" id="under_13" name="age" value="under_13">
+
+                    <label class="lg">under_13</label><br>
+
+                    <input type="radio" id="over_13" name="age" value="over_13">
+                    <label class="lg">over_13</label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend><span class="number">2</span>Your profile</legend>
+
+                    <label>Bio:</label>
+                    <textarea id="bio" name="bio"></textarea>
+
+                    <label>Job role:</label>
+                    <select id="job" name="job">
+                        <option>front end devoloper</option>
+                        <option>web designer</option>
+                        <option>web devoloper</option>
+
+                    </select>
+
+                    <label>Intrests:</label><br>
+                    <input type="checkbox" id="Devolopment" name="devolopment" value="intrests">
+                    <label>Devolopment</label><br>
+
+                    <input type="checkbox" id="Design" name="Design" value="intrests">
+                    <label>Design</label><br>
+
+                    <input type="checkbox" id="Business" name="business" id="intrests">
+                    <label>Business</label>
+
+
+                </fieldset>
+
+                <button type="submit">Signup</button>
+
+            </form>
+        </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+   $(document).ready(function(){
+                
+                $('#btnDiv').click(function(){
+                    alert($('#myDiv').html());
+                });
+                    
+                <p>This is another paragraph</p>
+                $('#emptyDiv').html('<p>This is another paragraph</p>'); 
+    
+            });
+        </script>
+    <style>
+        .yellowDiv{
+            background-color: yellow;
+            margin: 5px 0 0 0;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Demo:jQuery html()method</h1>
+        <button id="btnDiv">Get div html</button>
+        <div id="myDiv" class="yellowDiv">
+            <p style="font-size: 16px;font-weight: bold;">
+            This is paragrapg
+        </p>
+        </div>
+
+       <div id="emptyDiv">
+        
+       </div>
+       
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+   $(document).ready(function(){
+                
+                $('#btnDivStyle').click(function(){
+                    alert($('div').attr('class'));
+                });
+                    
+                $('#btnPStyle').click(function(){
+                    var style=$('p').prop('style');
+                    alert(style.fontweight);
+                });
+    
+                $('div').prop('class','yellowDiv');  
+    
+            });
+        </script>
+    <style>
+        .yellowDiv{
+            background-color: yellow;
+            margin: 5px 0 0 0;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Demo:jQuery prop()method</h1>
+        <button id="btnDivStyle">Get div class</button>
+        <button id="btnPStyle">Get p Style</button><br><br>
+
+         <div> 
+            This is div
+         </div>
+       <p style="font-size:16px;font-weight:bold;">
+        This is paragraph.
+       </p>
+       <div>
+        This is another div.
+       </div>
+       <p style="color:red;">
+        This is another paragraph
+       </p>
+    </body>
+</html>

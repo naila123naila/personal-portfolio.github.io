@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function largesstnum(){
+        var num1, num2, num3;
+        num1 = Number(document.getElementById("fnum").value);
+        num2 = Number(document.getElementById("snum").value);
+
+        if(num1>num2){
+            window.alert(num1+"-is Larger");
+        }
+        else if(num2>num1){
+            window.alert(num2+"-is Larger");
+        }
+        else if(num2>num1 && num2>num1){
+            window.alert(num2+"is larger");
+        }
+    }
+</script>
+<body>
+    <h1>check largest number</h1>
+    <br>
+    Enter number1:<input type="text" id="fnum"></input><br>
+    Enter number2:<input type="text" id="snum"></input><br>
+    <button onclick="largesstnum()">submit</button>
+</body>
+    
+    
+
+</html>
